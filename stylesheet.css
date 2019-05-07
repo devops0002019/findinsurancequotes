@@ -1,0 +1,8 @@
+  .button {
+      -webkit-box-shadow: var(--boxshadow) !important;
+      box-shadow: var(--boxshadow) !important;
+  }
+
+  [class*="column"].homeheadline {
+      --insert-min-height: 100px !important;
+  }
