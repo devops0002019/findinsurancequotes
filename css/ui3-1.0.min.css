@@ -767,6 +767,7 @@ column
 
 [class*="column"] i.fa,
 [class*="column"] i.fas,
+[class*="column"] i.far,
 [class*="column"] i.fab {
     color: var(--fa-color);
     border: var(--fa-border);
