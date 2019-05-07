@@ -6,3 +6,13 @@
   [class*="column"].homeheadline {
       --insert-min-height: 100px !important;
   }
+
+
+  [class*="column"].header-title {
+      text-align: center;
+      text-shadow: 1px 1px #000;
+      --h1-color: #fff !important;
+  }
+
+
+
