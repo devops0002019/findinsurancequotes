@@ -779,7 +779,7 @@ column
     -webkit-box-ordinal-group: var(--fa-order);
     -ms-flex-order: var(--fa-order);
     order: var(--fa-order);
-    text-shadow: var(--fa-text-shadow);
+    /* text-shadow: var(--fa-text-shadow); */
     text-align: var(--fa-text-align);
     -webkit-filter: var(--fa-filter);
     filter: var(--fa-filter);
@@ -2173,7 +2173,8 @@ max-width 768px
     justify-content: space-between;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
+	align-items: center;
+	flex-direction:column;
     width: 100%;
     max-width: var(--page-max-width);
     padding:  32px 0px;
@@ -2181,7 +2182,14 @@ max-width 768px
     background: transparent;
 }
 
+@media only screen and (min-width: 768px){
+	#navbar-empty  {
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+		flex-direction:row;
 
+}
 
 
 
@@ -2434,8 +2442,13 @@ responsive text code !!!
 
 
 
-
 /* footer */
 #footer {
 	padding: 32px 0px;
+}
+
+
+/* Utilities */ 
+.text-shadow {
+	text-shadow: 1px 1px #000;
 }
