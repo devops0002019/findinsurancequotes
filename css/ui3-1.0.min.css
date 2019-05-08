@@ -27,7 +27,7 @@
     --darkgray: #8C8C8C;
 
     --gray: gray;
-    --black: black;
+    --black: black;z
     --white: white;
     --silver: silver;
     --red: red;
@@ -55,7 +55,9 @@
     --navbar-text-color:#000;
 
     --footer-background::#fafafa;
-    --footer-text-color:#000;
+	--footer-text-color:#000;
+	
+
 
 }
 
@@ -827,6 +829,22 @@ column
     --insert-flex-direction: column;
     --insert-text-align: center;
 }
+
+
+[class*="column"][class*="menu-start"] {
+    --insert-display: flex;
+    --insert-justify-content: start;
+    --insert-align-items: start;
+    --insert-flex-direction: row;
+	--insert-text-align: start;
+	--insert-width: 100%;
+	--a-margin: 8px;
+}
+
+
+
+
+
 
 .start-vertical-between {
     display: -webkit-box;
@@ -2440,6 +2458,25 @@ responsive text code !!!
     color: #000 !important;
 }
 
+.text-primary {
+    color: var(--primary) !important;
+}
+.text-secondary {
+    color: var(--secondary) !important;
+}
+
+
+.text-tertiary {
+    color: var(--tertiary) !important;
+}
+
+.text-quaternary {
+    color: var(--quaternary) !important;
+}
+
+
+
+
 
 
 
@@ -2447,6 +2484,96 @@ responsive text code !!!
 #footer {
 	padding: 32px 0px;
 }
+
+#footer-empty {
+	background: #fff;
+	padding: 128px 0px;
+}
+
+
+
+
+
+
+
+
+
+#footer {
+    padding: 32px 0px;
+    color: #000;
+    background: var(--footer-background);
+
+}
+
+.footer {
+    margin: auto;
+    max-width: var(--page-max-width);
+    color:var(--footer-text-color);
+    width: 100%;
+}
+
+
+#footer h5 {
+    margin: 16px 0;
+    color:var(--footer-text-color);
+    opacity: 9;
+}
+
+#footer ul.menu-list[class*="column"] {
+    --insert-padding:1028px !important;
+}
+
+#footer ul.menu-list {
+    max-width: var(--page-max-width);
+    margin: 0;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex;
+    width: 100%;
+    grid-column: 1 / -1;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+#year {
+    font-size: 16px;
+    color:var(--footer-text-color);
+}
+
+
+
+
+
+*.copyright {
+    font-size: 16px!important;
+    color:var(--footer-text-color) !important;
+}
+*.copyright:before {
+    font-size: 16px!important;
+    color:var(--footer-text-color) !important;
+    margin: 4px;
+    content: ' \00A9'!important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Utilities */ 
