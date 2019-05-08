@@ -16,3 +16,14 @@
 
 
 
+
+
+.company-name {
+    font-size: 1em !important;
+    --company-name: 'Find Insurance Quotes';
+}
+
+.company-name:after {
+    content: var(--company-name) !important;
+} 
+
