@@ -23,7 +23,7 @@ const navbar_data = [
 ];
 function navbar_template(navbar) {
   return `
-      <a class="button" href="https://mystifying-hodgkin-910950.netlify.com/">Get a Quote</a>
+      <a class="button" href="https://cheaphealthcareplan.com/">Get a Quote</a>
       <h3>${navbar.brand}</h3>
 `;
 }
@@ -45,8 +45,8 @@ function footer_template(foot) {
         </div>
 
         <ul class="column menu-start">
-            <li><a href="privacy.html">Privacy</a></li>
-            <li><a href="terms.html">Term of Use</a></li>
+            <li><a href="/privacy.html">Privacy</a></li>
+            <li><a href="/terms.html">Term of Use</a></li>
         </ul>
     </div>
   `;
